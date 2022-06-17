@@ -40,14 +40,19 @@
         }
         function decimalPointCalculate(value, decimalPoint){
             if(decimalPoint === 'ceil'){
-                // return value.ceil()
-                return value.floor()
+                return value.ceil()
+           
             }
             if(decimalPoint === 'floor'){
                 return value.floor()
             }
             if(decimalPoint === 'round'){
+<<<<<<< HEAD
                 return value.round(0)
+=======
+                return value.round(bigDecimal.RoundingModes.HALF_EVEN)
+                return value.floor()
+>>>>>>> d4449ab4412723402b565d202895d5d03adea40e
             }
             return value
         }
